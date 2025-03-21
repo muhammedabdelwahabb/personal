@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en"> 
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="x-ua-compatible" content="ie=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>muhammed abdelwahab ahmed </title>
+        <link rel="stylesheet" href="muh.css">
+        <!-- font awesome cdn font icon  css -->
+         <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css">
+    </head>
+    <body>
+        <div class="hero-header">
+            <div class="wrapper">
+                <header>
+                    <div class="logo">
+                        <i class="fa-solid  fa-m"></i>
+                        <div class="logo-text">Muhammed Abdelwahab</div>
+                    </div>
+                    <nav>
+                        <div class="togglebtn">
+                            <span></span>
+                            <span></span>
+                            <span></span>
+                        </div>
+                        <ul class="navlinks">
+                            <li><a href="#">Home</a></li>
+                            <li><a href="#">Portfolio</a></li>
+                            <li><a href="#">Resume</a></li>
+                            <li><a href="#">Blog</a></li>
+                            <li><a href="#">Contact</a></li>
+                        </ul>
+                    </nav>
+                </header>
+                <div class="container">
+                    <div class="hero-pic">
+                        <img src="a3367432-cb5c-4b96-a30b-792a84bf6f40.jpg" alt="profile pic">
+                    </div>
+                    <div class="hero-text">
+                        <h4>Hi I'm a <span class="input"> Data Analyst</span></h4>
+                        <h1>Muhammed abdelwahab</h1>
+                        <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Optio at, deserunt nobis quasi veniam iste perferendis perspiciatis rerum sunt quis officiis animi ipsa ad ex natus. Asperiores distinctio mollitia rerum?</p>
+                        <div class="btn-group">
+                            <a href="cv.pdf" class="btn active" download>Download CV</a>
+                            <a href="#" class="btn">Contact</a>
+                        </div>
+                        <div class="social">
+                            <a href="https://www.linkedin.com/in/muhammed-abdelwahab-%D9%85%D8%AD%D9%85%D8%AF-%D8%B9%D8%A8%D8%AF%D8%A7%D9%84%D9%88%D9%87%D8%A7%D8%A8-b06584357?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app" target="_blank">
+                                <i class="fa-brands fa-linkedin"></i>
+                            </a>
+                            
+                            <a href="https://www.facebook.com/share/1H4jvdUeBL/" target="_blank">
+                                <i class="fa-brands fa-facebook"></i>
+                            </a>
+                            
+                            <a href="https://www.instagram.com/muhammed_abdelwahab_?igsh=bGhvaHkxaXc5ZTRu" target="_blank">
+                                <i class="fa-brands fa-instagram"></i>
+                            </a>
+
+                            <a href="https://github.com/muhammedabdelwahabb/muhammed.git" target="_blank">
+                                <i class="fa-brands fa-github"></i>
+                            </a>
+                            
+                            <a href="https://wa.me/201028497549" target="_blank">
+                                <i class="fa-brands fa-whatsapp"></i>
+                            </a>
+                        </div>
+                        
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!--typed js for typing text effect -->
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/typed.js/2.0.10/typed.js"></script>
+        <script>
+        /** creating button click show hide navbar **/
+            var togglebtn=document.querySelector(".togglebtn");
+            var nav=document.querySelector(".navlinks");
+            var links=document.querySelector(".navlinks li");
+
+            togglebtn.addEventListener("click", function(){
+                this.classList.toggle("click");
+                nav.classList.toggle("open");
+            })
+            
+            var typed=new Typed(".input",{
+                strings:[" Data Analyst","Business Analyst","Marketing Analyst",],
+                typedSpeed:60,
+                backSpeed:60,
+                loop:true
+            })
+        </script>      
+    </body>
+</html>
